@@ -56,22 +56,30 @@
 //     console.log ("purple");
 // }
 
-const password = prompt("Please, create a new password");
+// const password = prompt("Please, create a new password");
 
-if (password.length >= 8) {
-    if(password.indexOf(' ') === -1){
-        console.log("Valid Password!!")
-    } else {
-        console.log("Password Cannot Contain Spaces!")
+// if (password.length >= 8) {
+//     if(password.indexOf(' ') === -1){
+//         console.log("Valid Password!!")
+//     } else {
+//         console.log("Password Cannot Contain Spaces!")
+//     }
+// } else {
+//     console.log("Passsword too short! Must contain 6+ charaters")
+// }
+
+// PRACTICE
+
+const num = 79; // THIS IS THE ONLY LINE YOU SHOULD CHANGE :)
+
+if (num <= 100) {
+  if (num >= 50) {
+    console.log("HEY!");
+  }
+} else {
+  if (num < 103) {
+    if (num % 2 === 0) {
+      console.log("YOU GOT ME!");
     }
-} else {
-    console.log("Passsword too short! Must contain 6+ charaters")
-}
-
-
-
-{
-  console.log ("Valid Password!!");
-} else {
-  console.log ("Passsword too short! Must contain 6+ charaters");
+  }
 }
