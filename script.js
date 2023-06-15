@@ -56,8 +56,6 @@
 //     console.log ("purple");
 // }
 
-
-
 // const password = prompt("Please, create a new password");
 
 // if (password.length >= 8) {
@@ -86,17 +84,15 @@
 //   }
 // }
 
+// --TRUTHY AND FALSY VALUES--
 
+// const userInput = prompt("Type Something");
 
---TRUTHY AND FALSY VALUES--
-
-const userInput = prompt("Type Something");
-
-if(userInput) {
-  console.log("Truthy!")
-} else {
-  console.log("Falsy!")
-}
+// if(userInput) {
+//   console.log("Truthy!")
+// } else {
+//   console.log("Falsy!")
+// }
 
 // const userInput = prompt("Type Something");
 
@@ -105,3 +101,15 @@ if(userInput) {
 // } else {
 //   console.log("Falsy!")
 // }
+
+// --LOGICAL OPERATIONS--
+
+const password = prompt("Enter A Password");
+
+if (password.length >= 8 && password.indexOf(" ") === -1) {
+  console.log("Valid Password!");
+} else {
+  console.log("Invalid Password!");
+}
+
+
