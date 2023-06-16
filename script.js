@@ -130,11 +130,39 @@
 //   console.log("$20")
 // }
 
-console.log(!true)
-console.log(!false)
+// console.log(!true)
+// console.log(!false)
 
-const firstName = prompt("Enter your first name");
-if (!firstName) {
-    // console.log("Try to input yopur first name!!")
-    firstName = prompt("Try Again!!!")
-}
+// const firstName = prompt("Enter your first name");
+// if (!firstName) {
+//     firstName = prompt("Try Again!!!")
+// }
+
+// USING SWITCH STATEMENT
+
+const day = 71;
+    switch (day){
+    case 1:
+        console.log("It's Monday!");
+        break;
+    case 2:
+        console.log("It's Tuesday!");
+        break;
+    case 3:
+        console.log("It's Wednesday!");
+        break;
+    case 4:
+        console.log("It's Thursday!");
+        break;
+    case 5:
+        console.log("It's Friday!");
+        break;
+    case 6:
+        console.log("It's Saturday!");
+        break;
+    case 7:
+        console.log("It's Sunday!");
+        break;
+    default:
+        console.log("Invalid Day Of The Week!!")
+    }
