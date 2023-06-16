@@ -121,13 +121,20 @@
 // 10 - 65 Adult $20
 // 65+ Senior $10
 
-const age = 25;
-if(age < 5 || age >= 65) {
-  console.log("FREE");
-} else if (age < 10) {
-  console.log("$10")
-} else if (age < 65) {
-  console.log("$20")
+// const age = 25;
+// if(age < 5 || age >= 65) {
+//   console.log("FREE");
+// } else if (age < 10) {
+//   console.log("$10")
+// } else if (age < 65) {
+//   console.log("$20")
+// }
+
+console.log(!true)
+console.log(!false)
+
+const firstName = prompt("Enter your first name");
+if (!firstName) {
+    // console.log("Try to input yopur first name!!")
+    firstName = prompt("Try Again!!!")
 }
-
-
