@@ -114,7 +114,7 @@
 //   console.log("Invalid Password!");
 // }
 
-// OR || 
+// OR ||
 
 // 0 - 5 - free
 // 5 - 10 Child $10
@@ -140,29 +140,35 @@
 
 // USING SWITCH STATEMENT
 
-const day = 71;
-    switch (day){
-    case 1:
-        console.log("It's Monday!");
-        break;
-    case 2:
-        console.log("It's Tuesday!");
-        break;
-    case 3:
-        console.log("It's Wednesday!");
-        break;
-    case 4:
-        console.log("It's Thursday!");
-        break;
-    case 5:
-        console.log("It's Friday!");
-        break;
-    case 6:
-        console.log("It's Saturday!");
-        break;
-    case 7:
-        console.log("It's Sunday!");
-        break;
-    default:
-        console.log("Invalid Day Of The Week!!")
-    }
+// const day = 71;
+//     switch (day){
+//     case 1:
+//         console.log("It's Monday!");
+//         break;
+//     case 2:
+//         console.log("It's Tuesday!");
+//         break;
+//     case 3:
+//         console.log("It's Wednesday!");
+//         break;
+//     case 4:
+//         console.log("It's Thursday!");
+//         break;
+//     case 5:
+//         console.log("It's Friday!");
+//         break;
+//     case 6:
+//         console.log("It's Saturday!");
+//         break;
+//     case 7:
+//         console.log("It's Sunday!");
+//         break;
+//     default:
+//         console.log("Invalid Day Of The Week!!")
+//     }
+
+// JavaScript Arrays--
+
+const color = ["rad", "orange", "yalloww"];
+color[0] = "red";
+color[2] = "yellow";
