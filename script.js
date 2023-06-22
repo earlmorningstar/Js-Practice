@@ -172,3 +172,20 @@
 const color = ["rad", "orange", "yalloww"];
 color[0] = "red";
 color[2] = "yellow";
+
+
+Types of Array comonly used:
+1. .push
+2. .pop 
+3. .shift 
+4. .unshift 
+OTHERS
+5. .concat 
+6. .includes 
+7. .indexOf 
+8. .join
+9. .reverse
+10. .slice 
+11. .splice 
+12. .sort 
+
