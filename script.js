@@ -121,7 +121,7 @@
 // 10 - 65 Adult $20
 // 65+ Senior $10
 
-// const age = 25;
+// const age = 75;
 // if(age < 5 || age >= 65) {
 //   console.log("FREE");
 // } else if (age < 10) {
@@ -169,23 +169,34 @@
 
 // JavaScript Arrays--
 
-const color = ["rad", "orange", "yalloww"];
-color[0] = "red";
-color[2] = "yellow";
+// const color = ["rad", "orange", "yalloww"];
+// color[0] = "red";
+// color[2] = "yellow";
 
+// Types of Array comonly used:
+// 1. .push
+// 2. .pop
+// 3. .shift
+// 4. .unshift
+// OTHERS
+// 5. .concat
+// 6. .includes
+// 7. .indexOf
+// 8. .join
+// 9. .reverse
+// 10. .slice
+// 11. .splice
+// 12. .sort
 
-Types of Array comonly used:
-1. .push
-2. .pop 
-3. .shift 
-4. .unshift 
-OTHERS
-5. .concat 
-6. .includes 
-7. .indexOf 
-8. .join
-9. .reverse
-10. .slice 
-11. .splice 
-12. .sort 
+OBJECTS
 
+Objects are a fundamental data type used to represent and store collections of key-value pairs.
+Objects in JavaScript are dynamic, meaning that properties can be added, modified, or removed from them at any time.
+Objects can be created using object literals, constructors, or the Object.create() method.
+
+const person = {
+  firstName: "Earl",
+  lastName: "Morningstar",
+  age: "17",
+  location: "Dave ft Burna Boy",
+};
