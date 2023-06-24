@@ -188,15 +188,33 @@
 // 11. .splice
 // 12. .sort
 
-OBJECTS
+// OBJECTS
 
-Objects are a fundamental data type used to represent and store collections of key-value pairs.
-Objects in JavaScript are dynamic, meaning that properties can be added, modified, or removed from them at any time.
-Objects can be created using object literals, constructors, or the Object.create() method.
+// Objects are a fundamental data type used to represent and store collections of key-value pairs.
+// Objects in JavaScript are dynamic, meaning that properties can be added, modified, or removed from them at any time.
+// Objects can be created using object literals, constructors, or the Object.create() method.
 
-const person = {
-  firstName: "Earl",
-  lastName: "Morningstar",
-  age: "17",
-  location: "Dave ft Burna Boy",
-};
+// const person = {
+//   firstName: "Earl",
+//   lastName: "Morningstar",
+//   age: "17",
+//   location: "Dave ft Burna Boy",
+// }
+
+FOR LOOPS!!
+
+for (let i = 1; i <= 10; i++){
+    console.log(i);
+    console.log("I'm 'For Loop' example!")
+}
+
+for (let i = 1; i <=6; i++){
+    console.log(i);
+    console.log('Da ba dee da ba daa');
+}
+
+FOR COUNTDOWN IN LOOPS!!
+
+for (let i = 100; i >= 0; i -= 10) {
+  console.log(i);
+}
