@@ -201,20 +201,257 @@
 //   location: "Dave ft Burna Boy",
 // }
 
-FOR LOOPS!!
+// FOR LOOPS!!
 
-for (let i = 1; i <= 10; i++){
-    console.log(i);
-    console.log("I'm 'For Loop' example!")
-}
+// for (let i = 1; i <= 10; i++){
+//     console.log(i);
+//     console.log("I'm 'For Loop' example!")
+// }
 
-for (let i = 1; i <=6; i++){
-    console.log(i);
-    console.log('Da ba dee da ba daa');
-}
+// for (let i = 1; i <=6; i++){
+//     console.log(i);
+//     console.log('Da ba dee da ba daa');
+// }
 
-FOR COUNTDOWN IN LOOPS!!
+// FOR COUNTDOWN IN LOOPS!!
 
-for (let i = 100; i >= 0; i -= 10) {
-  console.log(i);
+// for (let i = 100; i >= 0; i -= 10) {
+//   console.log(i);
+// }
+
+
+
+// INFINITE LOOPS!!
+
+// for(let i = 20; i >= 0; i++) {
+//     console.log(i)
+// }
+
+// Don't try this!! For practice, add ';'
+
+// LOOPING OVER ARRAYS!!
+
+const animals = [
+    "Aardvark", 
+"Albatross",
+"Alligator",
+"Alpaca",
+"Ant",
+"Anteater",
+"Antelope",
+"Ape",
+"Armadillo",
+"Baboon",
+"Badger",
+"Barracuda",
+"Bat",
+"Bear",
+"Beaver",
+"Bee",
+"Beetle",
+"Bird",
+"Bison",
+"Blackbird",
+"Bluebird",
+"Boar",
+"Buffalo",
+"Butterfly",
+"Camel",
+"Caribou",
+"Cat",
+"Caterpillar",
+"Cheetah",
+"Chicken",
+"Chimpanzee",
+"Cobra",
+"Cockroach",
+"Cod",
+"Condor",
+"Coot",
+"Cow",
+"Coyote",
+"Crab",
+"Crane",
+"Cricket",
+"Crocodile",
+"Crow",
+"Deer",
+"Dingo",
+"Dog",
+"Dolphin",
+"Donkey",
+"Dragonfly",
+"Duck",
+"Eagle",
+"Eel",
+"Elephant",
+"Elk",
+"Emu",
+"Falcon",
+"Ferret",
+"Finch",
+"Fish",
+"Flamingo",
+"Fly",
+"Fox",
+"Frog",
+"Gazelle",
+"Gecko",
+"Gerbil",
+"Giraffe",
+"Gnat",
+"Goat",
+"Goose",
+"Gorilla",
+"Grasshopper",
+"Groundhog",
+"Gull",
+"Hamster",
+"Hare",
+"Hawk",
+"Hedgehog",
+"Heron",
+"Hippopotamus",
+"Honeybee",
+"Hornet",
+"Horse",
+"Hummingbird",
+"Hyena",
+"Ibex",
+"Iguana",
+"Impala",
+"Jackal",
+"Jaguar",
+"Jellyfish",
+"Kangaroo",
+"Koala",
+"Komodo dragon",
+"Ladybug",
+"Lemur",
+"Leopard",
+"Lion",
+"Llama",
+"Lobster",
+"Locust",
+"Louse",
+"Macaw",
+"Magpie",
+"Mallard",
+"Manta ray",
+"Mantis",
+"Marmot",
+"Meerkat",
+"Mole",
+"Monkey",
+"Moose",
+"Mosquito",
+"Moth",
+"Mouse",
+"Mule",
+"Muskrat",
+"Nighthawk",
+"Nightingale",
+"Octopus",
+"Opossum",
+"Orangutan",
+"Ostrich",
+"Otter",
+"Owl",
+"Ox",
+"Oyster",
+"Panda",
+"Panther",
+"Parrot",
+"Peacock",
+"Pelican",
+"Penguin",
+"Pheasant",
+"Pig",
+"Pigeon",
+"Piranha",
+"Platypus",
+"Porcupine",
+"Possum",
+"Prairie dog",
+"Quail",
+"Rabbit",
+"Raccoon",
+"Ram",
+"Rat",
+"Raven",
+"Rhinoceros",
+"Roadrunner",
+"Robin",
+"Rooster",
+"Salmon",
+"Sandpiper",
+"Sardine",
+"Scorpion",
+"Seagull",
+"Seahorse",
+"Seal",
+"Shark",
+"Sheep",
+"Shrimp",
+"Skunk",
+"Sloth",
+"Snail",
+"Snake",
+"Sparrow",
+"Spider",
+"Sponge",
+"Squid",
+"Squirrel",
+"Starfish",
+"Stork",
+"Swan",
+"Swordfish",
+"Tarantula",
+"Termite",
+"Tiger",
+"Toad",
+"Tortoise",
+"Toucan",
+"Trout",
+"Turkey",
+"Turtle",
+"Vulture",
+"Walrus",
+"Wasp",
+"Weasel",
+"Whale",
+"Wolf",
+"Wolverine",
+"Wombat",
+"Woodpecker",
+"Worm",
+"Wren",
+"Yak",
+"Zebra"]
+
+// for(let i = 0; i < animals.length; i++){
+//     console.log(i, animals[i]);
+// }
+
+// FOR THE REVERSE CASE!!
+
+// for(let i = animals.length -1; i >= 0; i--){
+//     console.log(i, animals[i]);
+// }
+
+
+// NESTED LOOPS!!
+
+const seatingChart = [
+    ['Kristen', 'Erik', 'Namita'],
+    ['Geoffery', 'Juanita', 'Antonio', 'Kevin'],
+    ['Yuma', 'Sakura', 'Jack' 'Erika']
+]
+
+for(let i = 0; i < seatingChart.length; i++){
+    const row = seatingChart[i];
+    console.log(`ROW #${i + 1}`)
+    for(let j = 0; j < row.length; j++){
+        console.log(row[j])
+    }
 }
