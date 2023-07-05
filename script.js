@@ -487,3 +487,124 @@
 //   break;
 // }
 // console.log("Okay, You Win!!");
+
+// const name = "Johnson";
+// const age = "35";
+// const address = "Orangutan Close, Zoo Estate, Animal Kingdom Street";
+// const job = "Professional Zoo Keeper";
+
+// console.log(`My name  is ${name} and I am ${age} years old. I am currently located at ${address} and lastly I am a ${job}, thank you!!`);
+
+// let a = 5;
+// let b = 10;
+
+// let result = (`The sum of ${a} and ${b} is equal to ${a + b}`);
+// console.log(result);
+
+// const greetings = "hello javasxcript";
+// console.log(greetings);
+
+// const newGreetings = greetings.replace('hello', 'Hello');
+// console.log(newGreetings);
+
+// const newGreetingTexts = newGreetings.replace('javasxcript', 'JavaScript');
+// console.log(newGreetingTexts);
+
+// const cars = "Honda ";
+
+// let newCars = cars.repeat(3);
+// console.log(newCars);
+
+// let guess = Math.floor(Math.random() * 200);
+// console.log(guess);
+
+// const numbers = 2468;
+
+// const parsedNumbers = parseInt(numbers);
+// console.log(parsedNumbers);
+
+// const userName = prompt("Enter your username here");
+
+// if (userName.length <= 6) {
+//   console.log("Username must contain 8 characters or more!");
+// } else {
+//   console.log("Confirmed!! Valid Username.");
+// }
+
+// const day = 5;
+
+// switch (day) {
+//     case 1:
+//         console.log("Monday!");
+//         break;
+//     case 2:
+//         console.log("Tuesday!");
+//         break;
+//     case 3:
+//         console.log("Wednesday!");
+//         break;
+//     case 4:
+//         console.log("Thursday!");
+//         break;
+//     case 5:
+//         console.log("Friday!");
+//         break;
+//     case 6:
+//         console.log("Saturday!");
+//         break;
+//     case 7:
+//         console.log("Sunday!");
+//         break;
+//     default:
+//         console.log("I dont know that!");
+// }
+
+// GUESSING GAME!!
+
+let maximum = parseInt(prompt("Enter the maximum number!"));
+while (!maximum) {
+  maximum = parseInt(prompt("Enter a valid number!"));
+}
+
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+
+let guess = prompt("Enter your first guess! (Type 'q' to quit)");
+let attempts = 1;
+
+while (parseInt(guess) !== targetNum) {
+  if (guess === "q") break;
+  guess = parseInt(guess);
+  if (guess > targetNum) {
+    guess = prompt("Too high! Enter a new guess:");
+    attempts++;
+  } else if (guess < targetNum) {
+    guess = prompt("Too low! Enter a new guess:");
+    attempts++;
+  } else {
+    guess = prompt("Invalid guess. Please enter a number or 'q' to quit");
+  }
+}
+
+if (guess === "q") {
+  console.log("OK, YOU QUIT!");
+} else {
+  console.log("CONGRATS YOU WIN!");
+  console.log(`You got it! It took you ${attempts} guesses`);
+}
+
+// FOR OF LOOP
+
+let fullNames = [
+  "Earl",
+  "Josh",
+  "Great",
+  "Elvis",
+  "Rex",
+  "Daniel",
+  "Nickolas",
+  "Pedro",
+];
+
+for (let full of fullNames) {
+  console.log(full);
+}
