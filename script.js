@@ -592,41 +592,108 @@
 //   console.log(`You got it! It took you ${attempts} guesses`);
 // }
 
-// FOR OF LOOP
+// FOR OF LOOP!!
 
 // let fullNames = [
-//   "Earl",
-//   "Josh",
-//   "Great",
-//   "Elvis",
-//   "Rex",
-//   "Daniel",
-//   "Nickolas",
-//   "Pedro",
+//     ["Earl","Josh","Great"],
+//     ["Elvis","Rex","Daniel"],
+//     ["Nickolas","Pedro", "Xavi"]
 // ];
 
-// for (let full of fullNames) {
-//   console.log(full);
+// for (let roll of fullNames) {
+//     for(let names of roll)
+//   console.log(names);
 // }
 
-function myself() {
-  console.log("Earl");
+// const surNames = ["Onyeabor", "Udo", "Ugo", "Mammam", "Mbomson"];
+// for (let po of surNames) {
+//   console.log(po);
+// }
+
+// FUNCTIONS!!
+
+// function myself() {
+//   console.log("Earl");
+// }
+
+// myself();
+// myself();
+// myself();
+// myself();
+// myself();
+// myself();
+
+// function myOnlyName(){
+//     console.log('Earl');
+// }
+
+// myOnlyName();
+// myOnlyName();
+// myOnlyName();
+
+// function student(studentName, studentCourse) {
+//   const details = `${studentName} is a student at Axia Africa studying ${studentCourse}.`;
+//   return details;
+// }
+
+// const studentData1 = student("Earl", "Front-End Dev");
+// console.log(studentData1);
+
+// const studentData2 = student("Great", "Back-End Dev");
+// console.log(studentData2);
+
+// Todo List Project!!
+
+// let input = prompt('what would like to do?');
+// const todos = ['Clean the house', 'Do my laundry'];
+// while(input !== 'quit' && input !== 'q') {
+//     if(input === 'list'){
+//        console.log('***********')
+//        for(let i = 0; 1 < todos.length; i++) {
+//         console.log(`${i}: ${todos[i]}`);
+//        }
+//        console.log('***********')
+//     } else if (input === 'new'){
+//         const newTodo = prompt('okay, What is your new todo?');
+//         todos.push(newTodo);
+//         console.log(`${newTodo} has been added to the list`)
+//     } else if(input === 'delete'){
+//         const index = parseInt(prompt('Okay, enter an index to delete:'));
+//         if (!Number.isNaN(index)){
+//         // const index = parseInt(indexStr);
+//         const deleted = todos.splice(index, 1);
+//         console.log(`Okay, you deleted ${deleted[0]}`);
+//     } else {
+//         console.log('Unknown Index')
+//     }
+
+//     }
+//     input = prompt('what would like to do?')
+// }
+// console.log('Okay, You Quit The App!!');
+
+// function myName() {
+//     console.log('My name is Earl.');
+//     // console.log('His name is Great.');
+//     // console.log('Their names is Josh and Elvis.');
+// }
+
+// myName();
+
+// function myName(firstName) {
+//     console.log(`My name is ${firstName}`);
+// }
+
+// myName(Earl);
+
+// Multiple Argument In Function!!
+
+function repeat(str, numTimes) {
+  let result = "";
+  for (let i = 0; i < numTimes; i++) {
+    result += str;
+  }
+  console.log(result);
 }
 
-myself();
-myself();
-myself();
-myself();
-myself();
-myself();
-
-function student(studentName, studentCourse) {
-  const details = `${studentName} is a student at Axia Africa studying ${studentCourse}.`;
-  return details;
-}
-
-const studentData1 = student("Earl", "Front-End Dev");
-console.log(studentData1);
-
-const studentData2 = student("Great", "Back-End Dev");
-console.log(studentData2);
+repeat("How are you? ", 5);
