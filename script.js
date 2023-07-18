@@ -688,12 +688,93 @@
 
 // Multiple Argument In Function!!
 
-function repeat(str, numTimes) {
-  let result = "";
-  for (let i = 0; i < numTimes; i++) {
-    result += str;
-  }
-  console.log(result);
+// function repeat(str, numTimes) {
+//   let result = "";
+//   for (let i = 0; i < numTimes; i++) {
+//     result += str;
+//   }
+//   console.log(result);
+// }
+
+// repeat("How are you? ", 5);
+
+// USE OF RETURN STATEMENT!!
+
+// EXAMPLE 1
+
+// function sum(x, y){
+// if(typeof x !== 'number' || typeof y !== 'number'){
+//   return false;
+// }
+// return x + y;
+// }
+
+// // EXAMPLE 2
+
+// function addNumbers(a, b){
+//   return a + b;
+// }
+
+// const result = addNumbers(14, 55);
+// console.log(result);
+
+// DOM MANIPULATION!!
+
+// const firstBox = document.getElementById('firstDiv').innerText;
+// console.log(firstBox);
+
+// const secondBox = document.getElementsByClassName('second-div');
+// console.log(secondBox[1].innerText);
+
+// MORE INTO FUNCTION!!
+
+// BLOCK SCOPE
+
+let radius = 8;
+if (radius > 0) {
+  const PI = 3.14;
+  let circ = 2 * PI * radius;
+}
+// console.log(radius); //8
+// console.log(PI); //NOT DEFINED. NOTE: USING var CAN ACCESS IT.
+// console.log(circ); //NOT DEFINED. NOTE: USING var CAN ACCESS IT.
+
+// LEXICAL SCOPE
+
+// function bankRobbery() {
+//   const heroes = ["Spiderman", "Wolverine", "Black Panther", "Batwoman"];
+//   function cryForHelp() {
+//     for (let hero of heroes) {
+//       console.log(`PLEASE HELP US, ${hero.toUpperCase()}`);
+//     }
+//   }
+//   // cryForHelp();
+// }
+
+// const square = function (num) {
+//   return num * num;
+// };
+
+// square(7);
+// console.log(square);
+
+// Higher Order Functions: Functions that operates on/with other functions.
+// They accept other functions as arguments.
+
+function callTwice(func) {
+  func();
+  func();
 }
 
-repeat("How are you? ", 5);
+function callTenTimes(f) {
+  for (let i = 0; i < 10; i++) {
+    f();
+  }
+}
+
+function rollDie() {
+  const roll = Math.floor(Math.random() * 6) + 1;
+  console.log(roll);
+}
+
+callTwice(rollDie);
