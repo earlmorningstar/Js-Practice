@@ -761,20 +761,51 @@ if (radius > 0) {
 // Higher Order Functions: Functions that operates on/with other functions.
 // They accept other functions as arguments.
 
-function callTwice(func) {
-  func();
-  func();
+// function callTwice(func) {
+//   func();
+//   func();
+// }
+
+// function callTenTimes(f) {
+//   for (let i = 0; i < 10; i++) {
+//     f();
+//   }
+// }
+
+// function rollDie() {
+//   const roll = Math.floor(Math.random() * 6) + 1;
+//   console.log(roll);
+// }
+
+// callTwice(rollDie);
+
+// Returning Functions
+
+// function makeMyMysteryFunc(){
+//     const rand = Math.random();
+//     if(rand > 0.5){
+//         return function(){
+//             console.log("Congrats");
+//         }
+//     } else {
+//         return function(){
+//             console.log('Dissapointed!!');
+//         }
+//     }
+// }
+
+// console.log(makeMyMysteryFunc());
+
+// Factory Function: A funtion that would make other functions for you.
+
+function makeNewFunc(min, max) {
+  return function (num) {
+    return num >= min && num <= max;
+  };
 }
 
-function callTenTimes(f) {
-  for (let i = 0; i < 10; i++) {
-    f();
-  }
-}
+const isChild = makeNewFunc(1, 18);
+const isAdult = makeNewFunc(19, 65);
+const isSenior = makeNewFunc(66, 100);
 
-function rollDie() {
-  const roll = Math.floor(Math.random() * 6) + 1;
-  console.log(roll);
-}
-
-callTwice(rollDie);
+console.log(isChild(19));
