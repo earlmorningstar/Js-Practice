@@ -798,14 +798,43 @@ if (radius > 0) {
 
 // Factory Function: A funtion that would make other functions for you.
 
-function makeNewFunc(min, max) {
-  return function (num) {
-    return num >= min && num <= max;
-  };
-}
+// function makeNewFunc(min, max) {
+//   return function (num) {
+//     return num >= min && num <= max;
+//   };
+// }
 
-const isChild = makeNewFunc(1, 18);
-const isAdult = makeNewFunc(19, 65);
-const isSenior = makeNewFunc(66, 100);
+// const isChild = makeNewFunc(1, 18);
+// const isAdult = makeNewFunc(19, 65);
+// const isSenior = makeNewFunc(66, 120);
 
-console.log(isChild(19));
+// console.log(isChild(19));
+// console.log(isAdult(23));
+// console.log(isSenior(120));
+
+// DEFINING METHODS - Adding functions as property to an Object.
+
+const myCalculator = {
+  PI: 3.14159,
+  square: function (num) {
+    return num * num;
+  },
+  cube: function (num) {
+    return num ** 3;
+  },
+};
+
+console.log(myCalculator.square(5));
+console.log(myCalculator.cube(5));
+
+const fullDetails = {
+  firstName: "Earl",
+  lastName: "Morningstar",
+  age: 187,
+  eyeColor: "Grey",
+  comment() {
+    console.log(`${this.firstName} says Hello!`);
+  },
+};
+
+console.log(fullDetails.comment());
