@@ -5,7 +5,7 @@
 //     console.log("True as norms")
 // }
 
-// if (2 + 2 ===6){
+// if (2 + 2 === 6){
 //     console.log("Never Display")
 // }
 
@@ -20,7 +20,7 @@
 // const dayOfTheWeek = 'Friday';
 
 // if (dayOfTheWeek === 'Monday') {
-//     console.log("Nah, Not Today, Fuck!!")
+//     console.log("Nah, Not Today!!")
 // } else if (dayOfTheWeek === 'Friday') {
 //     console.log("Great Day To Be Alive")
 // }
@@ -730,11 +730,12 @@
 
 // BLOCK SCOPE
 
-let radius = 8;
-if (radius > 0) {
-  const PI = 3.14;
-  let circ = 2 * PI * radius;
-}
+// let radius = 8;
+// if (radius > 0) {
+//   const PI = 3.14;
+//   let circ = 2 * PI * radius;
+// }
+
 // console.log(radius); //8
 // console.log(PI); //NOT DEFINED. NOTE: USING var CAN ACCESS IT.
 // console.log(circ); //NOT DEFINED. NOTE: USING var CAN ACCESS IT.
@@ -814,27 +815,71 @@ if (radius > 0) {
 
 // DEFINING METHODS - Adding functions as property to an Object.
 
-const myCalculator = {
-  PI: 3.14159,
-  square: function (num) {
-    return num * num;
-  },
-  cube: function (num) {
-    return num ** 3;
-  },
-};
+// const myCalculator = {
+//   PI: 3.14159,
+//   square: function (num) {
+//     return num * num;
+//   },
+//   cube: function (num) {
+//     return num ** 3;
+//   },
+// };
 
-console.log(myCalculator.square(5));
-console.log(myCalculator.cube(5));
+// console.log(myCalculator.square(5));
+// console.log(myCalculator.cube(5));
 
-const fullDetails = {
-  firstName: "Earl",
-  lastName: "Morningstar",
-  age: 187,
-  eyeColor: "Grey",
-  comment() {
-    console.log(`${this.firstName} says Hello!`);
-  },
-};
+// const fullDetails = {
+//   firstName: "Earl",
+//   lastName: "Morningstar",
+//   age: 187,
+//   eyeColor: "Grey",
+//   comment() {
+//     console.log(`${this.firstName} says Hello!`);
+//   },
+// };
 
-console.log(fullDetails.comment());
+// console.log(fullDetails.comment());
+
+// FOR EACH
+
+// const numbers = ["Gull",
+// "Hamster",
+// "Hare",
+// "Hawk",
+// "Hedgehog",
+// "Heron",
+// "Hippopotamus",
+// "Honeybee",
+// "Hornet",];
+
+// function print(element){
+//   console.log(element);
+// }
+
+// numbers.forEach(print);
+
+// OR
+
+// for(let el of numbers){
+//   console.log(el);
+// }
+
+// MAP
+
+// const animals = [
+//   "Gull",
+//   "Hamster",
+//   "Hare",
+//   "Hawk",
+//   "Hedgehog",
+//   "Heron",
+//   "Hippopotamus",
+//   "Honeybee",
+//   "Hornet",
+// // ]; NOT AN ARRAY BUT OBJECT IN AN ARRAY SHOULD BE USED!!
+
+// const animalsName = animals.map(function (names) {
+//   return names.animals;
+// });
+
+// ARROW FUNCTION!
