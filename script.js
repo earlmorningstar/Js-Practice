@@ -882,4 +882,11 @@
 //   return names.animals;
 // });
 
-// ARROW FUNCTION!
+// ARROW FUNCTION! Refer to notes//
+
+// setTimeout and setInterval(clearInterval)//
+
+// console.log("Hello there...");
+// setTimeout(() => {
+//     console.log("...Are you still there?")
+// }, 3000)
