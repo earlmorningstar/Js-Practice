@@ -893,17 +893,79 @@
 
 // ADD EVENT LISTENER  .addEventListener()
 
-const button = document.querySelector("button");
-const h1 = document.querySelector("h1");
-button.addEventListener("click", () => {
-  const newColor = randomColor();
-  document.body.style.backgroundColor = newColor;
-  h1.textContent = newColor;
-});
+// const button = document.querySelector("button");
+// const h1 = document.querySelector("h1");
+// button.addEventListener("click", () => {
+//   const newColor = randomColor();
+//   document.body.style.backgroundColor = newColor;
+//   h1.textContent = newColor;
+// });
 
-const randomColor = () => {
-  const r = Math.floor(Math.random() * 255);
-  const g = Math.floor(Math.random() * 255);
-  const b = Math.floor(Math.random() * 255);
-  return `rgb(${r}, ${g}, ${b})`;
-};
+// const randomColor = () => {
+//   const r = Math.floor(Math.random() * 255);
+//   const g = Math.floor(Math.random() * 255);
+//   const b = Math.floor(Math.random() * 255);
+//   return `rgb(${r}, ${g}, ${b})`;
+// };
+
+
+// Ping Pong Game!!!
+
+const p1Button = document.querySelector('#p1Button');
+const p2Button = document.querySelector('#p2Button');
+const playerOneScore = document.querySelector('#playerOneScore');
+const playerTwoScore = document.querySelector('#playerTwoScore');
+const resetButton = document.querySelector('#reset');
+const winningScoreSelect = document.querySelector('#playTo');
+
+
+let p1Score = 0;
+let p2Score = 0;
+let winningScore = 5;
+let isGameOver = false;
+
+// Updating The Player 1 Button!
+
+p1Button.addEventListener('click', () => {
+    if(!isGameOver){
+        p1Score += 1;
+        if (p1Score === winningScore){
+            isGameOver = true;
+        }
+        playerOneScore.textContent = p1Score;
+    }
+})
+
+// Updating The Player 2 Button!
+
+p2Button.addEventListener('click', () => {
+    if(!isGameOver){
+        p2Score += 1;
+        if (p2Score === winningScore){
+            isGameOver = true;
+        }
+        playerTwoScore.textContent = p2Score;
+    }
+})
+
+
+winningScoreSelect.addEventListener('change', () => {
+    winningScore = parseInt(this.value);
+    reset();
+})
+
+// Adding The Reset Button!!
+
+resetButton.addEventListener('click', reset);
+
+function reset()  {
+        isGameOver = false;
+        p1Score = 0;
+        p2Score = 0;
+        playerOneScore.textContent = 0;
+        playerTwoScore.textContent = 0;
+    }
+
+
+
+
