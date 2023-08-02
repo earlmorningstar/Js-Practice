@@ -909,62 +909,99 @@
 // };
 
 
-// Ping Pong Game!!!
+// Ping Pong Game!!!  <!-- Score Keeper Game -->
 
-const p1Button = document.querySelector('#p1Button');
-const p2Button = document.querySelector('#p2Button');
-const playerOneScore = document.querySelector('#playerOneScore');
-const playerTwoScore = document.querySelector('#playerTwoScore');
-const resetButton = document.querySelector('#reset');
-const winningScoreSelect = document.querySelector('#playTo');
+// const p1Button = document.querySelector('#p1Button');
+// const p2Button = document.querySelector('#p2Button');
+// const playerOneScore = document.querySelector('#playerOneScore');
+// const playerTwoScore = document.querySelector('#playerTwoScore');
+// const resetButton = document.querySelector('#reset');
+// const winningScoreSelect = document.querySelector('#playTo');
 
 
-let p1Score = 0;
-let p2Score = 0;
-let winningScore = 5;
-let isGameOver = false;
+// let p1Score = 0;
+// let p2Score = 0;
+// let winningScore = 5;
+// let isGameOver = false;
 
-// Updating The Player 1 Button!
+// // Updating The Player 1 Button!
 
-p1Button.addEventListener('click', () => {
-    if(!isGameOver){
-        p1Score += 1;
-        if (p1Score === winningScore){
-            isGameOver = true;
+// p1Button.addEventListener('click', () => {
+//     if(!isGameOver){
+//         p1Score += 1;
+//         if (p1Score === winningScore){
+//             isGameOver = true;
+//         }
+//         playerOneScore.textContent = p1Score;
+//     }
+// })
+
+// // Updating The Player 2 Button!
+
+// p2Button.addEventListener('click', () => {
+//     if(!isGameOver){
+//         p2Score += 1;
+//         if (p2Score === winningScore){
+//             isGameOver = true;
+//         }
+//         playerTwoScore.textContent = p2Score;
+//     }
+// })
+
+
+// winningScoreSelect.addEventListener('change', () => {
+//     winningScore = parseInt(this.value);
+//     reset();
+// })
+
+// // Adding The Reset Button!!
+
+// resetButton.addEventListener('click', reset);
+
+// function reset()  {
+//         isGameOver = false;
+//         p1Score = 0;
+//         p2Score = 0;
+//         playerOneScore.textContent = 0;
+//         playerTwoScore.textContent = 0;
+//     }
+
+    // ChechOut To Complete Soon.  <!-- Score Keeper Game -->
+
+
+    // Learning Promises!!!
+// Example:
+
+const fakeRequestPromises = (url) => {
+    return new Promise ((resolved, reject) => {
+    const delay = Math.floor(Math.randomn() * (4500)) + 500;
+    setTimeout(() => {
+        if (delay > 4000) {
+            reject ('Connection Timeout:(')
+        } else {
+            resolved(`Here is your fake data from ${url}`)
         }
-        playerOneScore.textContent = p1Score;
-    }
+    }, delay)
+})
+}
+
+
+fakeRequestPromises('yelp.com/api/coffee/page1')
+.then(() => {
+    console.log("It Worked for request 1");
+   return fakeRequestPromises('yelp.com/api/coffee/page2')
+})
+.then(() => {
+    console.log("It Workedfor request 2");
+    return fakeRequestPromises('yelp.com/api/coffee/page3')
+})
+.then(() => {
+    console.log("It Worked for request 3");
+})
+.catch(() =>  {
+    console.log("Oh No!! Error!!");
 })
 
-// Updating The Player 2 Button!
-
-p2Button.addEventListener('click', () => {
-    if(!isGameOver){
-        p2Score += 1;
-        if (p2Score === winningScore){
-            isGameOver = true;
-        }
-        playerTwoScore.textContent = p2Score;
-    }
-})
-
-
-winningScoreSelect.addEventListener('change', () => {
-    winningScore = parseInt(this.value);
-    reset();
-})
-
-// Adding The Reset Button!!
-
-resetButton.addEventListener('click', reset);
-
-function reset()  {
-        isGameOver = false;
-        p1Score = 0;
-        p2Score = 0;
-        playerOneScore.textContent = 0;
-        playerTwoScore.textContent = 0;
-    }
 
 
 
