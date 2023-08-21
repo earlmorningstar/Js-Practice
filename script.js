@@ -908,7 +908,6 @@
 //   return `rgb(${r}, ${g}, ${b})`;
 // };
 
-
 // Ping Pong Game!!!  <!-- Score Keeper Game -->
 
 // const p1Button = document.querySelector('#p1Button');
@@ -917,7 +916,6 @@
 // const playerTwoScore = document.querySelector('#playerTwoScore');
 // const resetButton = document.querySelector('#reset');
 // const winningScoreSelect = document.querySelector('#playTo');
-
 
 // let p1Score = 0;
 // let p2Score = 0;
@@ -948,7 +946,6 @@
 //     }
 // })
 
-
 // winningScoreSelect.addEventListener('change', () => {
 //     winningScore = parseInt(this.value);
 //     reset();
@@ -966,43 +963,70 @@
 //         playerTwoScore.textContent = 0;
 //     }
 
-    // ChechOut To Complete Soon.  <!-- Score Keeper Game -->
+// ChechOut To Complete Soon.  <!-- Score Keeper Game -->
 
-
-    // Learning Promises!!!
+// Learning Promises!!!
 // Example:
 
-const fakeRequestPromises = (url) => {
-    return new Promise ((resolved, reject) => {
-    const delay = Math.floor(Math.randomn() * (4500)) + 500;
-    setTimeout(() => {
-        if (delay > 4000) {
-            reject ('Connection Timeout:(')
-        } else {
-            resolved(`Here is your fake data from ${url}`)
-        }
-    }, delay)
-})
-}
+// const fakeRequestPromises = (url) => {
+//     return new Promise ((resolved, reject) => {
+//     const delay = Math.floor(Math.randomn() * (4500)) + 500;
+//     setTimeout(() => {
+//         if (delay > 4000) {
+//             reject ('Connection Timeout:(')
+//         } else {
+//             resolved(`Here is your fake data from ${url}`)
+//         }
+//     }, delay)
+// })
+// }
+
+// fakeRequestPromises('yelp.com/api/coffee/page1')
+// .then(() => {
+//     console.log("It Worked for request 1");
+//    return fakeRequestPromises('yelp.com/api/coffee/page2')
+// })
+// .then(() => {
+//     console.log("It Workedfor request 2");
+//     return fakeRequestPromises('yelp.com/api/coffee/page3')
+// })
+// .then(() => {
+//     console.log("It Worked for request 3");
+// })
+// .catch(() =>  {
+//     console.log("Oh No!! Error!!");
+// })
 
 
-fakeRequestPromises('yelp.com/api/coffee/page1')
-.then(() => {
-    console.log("It Worked for request 1");
-   return fakeRequestPromises('yelp.com/api/coffee/page2')
-})
-.then(() => {
-    console.log("It Workedfor request 2");
-    return fakeRequestPromises('yelp.com/api/coffee/page3')
-})
-.then(() => {
-    console.log("It Worked for request 3");
-})
-.catch(() =>  {
-    console.log("Oh No!! Error!!");
-})
+// const zt = ['Great', 'David', 'Bocks'];
+// const bele = zt.length;
+// console.log(bele);
+
+// zt.push('Earl', 'Josh', 'Bani');
+// console.log (zt);
+
+// zt[6] = 'Bash';
+// console.log(zt);
 
 
+// const seatingChart = [
+//     ['Great', 'David', 'Bocks'],
+//     ['Earl', 'Josh', 'Bani'],
+//     ['Somto', 'Daniel', 'Vera']
+// ];
 
+// for (let i = 0; i < seatingChart.length; i++){
+//     const row = seatingChart[i];
+//     console.log(`row # &{i+1}`);
+//     for (let j = 0; j < row.length; j++){
+//         console.log(row[j]);
+//     }
+// }
+
+// let count = 0;
+// while (count < 10){
+//     count++;
+//     console.log(count);
+// }
 
 
