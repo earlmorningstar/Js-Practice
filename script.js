@@ -1030,3 +1030,21 @@
 // }
 
 
+
+// ---ASYNC & AXIOS---
+
+// const getStarWarsPerson = async (id) => {
+//     try {
+//         const response = await axios.get (`https://swapi.dev/api/people/${id}`);
+//         console.log(response.data);
+//         // const character = response.data;
+//         // console.log(character.birth_year);
+//     } catch(e) {
+//         console.log("Error", e);
+//     };
+// }
+    
+// getStarWarsPerson(2);
+// getStarWarsPerson(10);
+
+
