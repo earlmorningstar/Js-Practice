@@ -997,7 +997,6 @@
 //     console.log("Oh No!! Error!!");
 // })
 
-
 // const zt = ['Great', 'David', 'Bocks'];
 // const bele = zt.length;
 // console.log(bele);
@@ -1007,7 +1006,6 @@
 
 // zt[6] = 'Bash';
 // console.log(zt);
-
 
 // const seatingChart = [
 //     ['Great', 'David', 'Bocks'],
@@ -1029,8 +1027,6 @@
 //     console.log(count);
 // }
 
-
-
 // ---ASYNC & AXIOS---
 
 // const getStarWarsPerson = async (id) => {
@@ -1043,8 +1039,30 @@
 //         console.log("Error", e);
 //     };
 // }
-    
+
 // getStarWarsPerson(2);
 // getStarWarsPerson(10);
 
+// <!-- ---Tv Show Search--- -->
 
+const form = document.querySelector("#searchForm");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const searchTerm = form.elements.query.value;
+  const config = { params: { q: searchTerm } }; //You can add other params. Eg: Joel: 'is funny'
+//   const configTwo = {headers: {accept: 'application/json'}};
+  const res = await axios.get(`https://api.tvmaze.com/search/shows`, config);
+  makeImages(res.data);
+  form.elements.query.value = "";
+});
+
+const makeImages = (shows) => {
+  for (let result of shows) {
+    if (result.show.image) {
+      const img = document.createElement("IMG");
+      img.src = result.show.image.medium;
+      document.body.append(img);
+    }
+  }
+};
