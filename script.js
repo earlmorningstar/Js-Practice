@@ -1090,14 +1090,37 @@
 
 // ---USING JAVASCRIPT CLASSES INSTEAD---
 
-class Color {
-  constructor(r, g, b, name) {
-    this.r = r;
-    this.g = g;
-    this.b = b;
+// class Color {
+//   constructor(r, g, b, name) {
+//     this.r = r;
+//     this.g = g;
+//     this.b = b;
+//     this.name = name;
+//   }
+// }
+
+// const color1 = new Color(255, 150, 100, 'Orange');
+
+// ---USING THE KEYWORD "extends" and "super"---
+
+class Pet {
+  constructor(name, age) {
     this.name = name;
+    this.age = age;
+  }
+  eat() {
+    return `${this.name} is eating!`;
   }
 }
 
-const color1 = new Color(255, 150, 100, 'Orange');
+class Cat extends Pet {
+  meow() {
+    return "Meow";
+  }
+}
 
+class Dog extends Pet {
+  bark() {
+    return "Woof!";
+  }
+}
