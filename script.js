@@ -1069,7 +1069,6 @@
 
 // <!-- ---Tv Show Search Ends--- -->
 
-
 // ----PROTOTYPES - How it works----
 
 // String.prototype.yell = function() {
@@ -1080,11 +1079,25 @@
 
 // ---CONSTRUCTOR FUNCTION---
 
-function Color (r, g, b) {
-    this.r =r;
-    this.g =g;
-    this.b  =b;
-    console.log(this);
+// function Color (r, g, b) {
+//     this.r =r;
+//     this.g =g;
+//     this.b  =b;
+//     console.log(this);
+// }
+
+// new Color (255, 40, 100);
+
+// ---USING JAVASCRIPT CLASSES INSTEAD---
+
+class Color {
+  constructor(r, g, b, name) {
+    this.r = r;
+    this.g = g;
+    this.b = b;
+    this.name = name;
+  }
 }
 
-new Color (255, 40, 100);
+const color1 = new Color(255, 150, 100, 'Orange');
+
