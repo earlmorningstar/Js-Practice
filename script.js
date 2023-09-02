@@ -1072,9 +1072,19 @@
 
 // ----PROTOTYPES - How it works----
 
-String.prototype.yell = function() {
-    return `OMG!!! ${this.toUpperCase()}!!!! ARRRRGGHH!!`;
-};
+// String.prototype.yell = function() {
+//     return `OMG!!! ${this.toUpperCase()}!!!! ARRRRGGHH!!`;
+// };
 
-console.log('i love you'.yell());  // OMG!!! I LOVE YOU!!!! ARRRRGGHH!!
+// console.log('i love you'.yell());  // OMG!!! I LOVE YOU!!!! ARRRRGGHH!!
 
+// ---CONSTRUCTOR FUNCTION---
+
+function Color (r, g, b) {
+    this.r =r;
+    this.g =g;
+    this.b  =b;
+    console.log(this);
+}
+
+new Color (255, 40, 100);
