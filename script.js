@@ -1103,24 +1103,108 @@
 
 // ---USING THE KEYWORD "extends" and "super"---
 
-class Pet {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  eat() {
-    return `${this.name} is eating!`;
-  }
-}
+// class Pet {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat() {
+//     return `${this.name} is eating!`;
+//   }
+// }
 
-class Cat extends Pet {
-  meow() {
-    return "Meow";
-  }
-}
+// class Cat extends Pet {
+//   meow() {
+//     return "Meow";
+//   }
+// }
 
-class Dog extends Pet {
-  bark() {
-    return "Woof!";
-  }
+// class Dog extends Pet {
+//   bark() {
+//     return "Woof!";
+//   }
+// }
+
+// Normal Practice---
+
+// let msg = "leave me alone  ";
+
+// let trimmedMsg = msg.trim().toUpperCase();
+
+// let msgTwo = "lol you're funny";
+
+// let replacedMsg = msgTwo.replace("lol", "lmao");
+
+// console.log(replacedMsg);
+
+// const name = "Earl";
+// const age = 88;
+
+// console.log(`My name is ${name} and I'm ${age} years old.`);
+
+// let a = 10;
+// let b = 15;
+// let c = 20;
+
+// console.log(`The sum of ${a}, ${b} and also ${c} will give you ${a + b + c}.`);
+
+// const score = 55;
+
+// const newScore = score + 10;
+
+// console.log(newScore);
+
+// let str = "Hello ";
+// let repeatedStr = str.repeat(4);
+// console.log(repeatedStr);
+
+// const randNumb = Math.random() * 15;
+// console.log(randNumb);
+
+// const flooredRandNumb = Math.floor(Math.random() * 200);
+// console.log(flooredRandNumb);
+
+// const password = prompt("Please, input your password");
+
+// if(password.length <= 6) {
+//     console.log("Password too short. Must contain 6+ characters");
+// } else {
+//     console.log("Congrats!! You're in");
+// }
+
+// if(password.length >= 6){
+//     if(password.indexOf(' ') === -1){
+//         console.log("Congrats, No spaces, You're in");
+//     } else {
+//         console.log("password cannot contain spaces");
+//     }
+// } else {
+//     console.log("Password too short");
+// }
+
+// ---Using && (and) Operator---
+
+// if(password.length >= 6 && password.indexOf(' ') === -1) {
+//     console.log ("Valid password");
+// } else {
+//     console.log ("Invalid Password!!");
+// }
+
+// ---Using || (or) Operator---
+
+// const ageGrade = 11;
+
+// if (ageGrade < 5 || ageGrade > 65) {
+//   console.log("FREE");
+// } else if (ageGrade < 10) {
+//   console.log("$10");
+// } else if (ageGrade < 65) {
+//   console.log("$20");
+// }
+
+let firstName = prompt("Enter your First name");
+
+if (!firstName) {
+  firstName = prompt("Try Again");
+  // console.log(firstName);
 }
