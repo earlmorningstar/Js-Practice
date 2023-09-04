@@ -3,6 +3,8 @@
 
 // if (1 + 1 === 2){
 //     console.log("True as norms")
+// } else {
+//     console.log("Nada");
 // }
 
 // if (2 + 2 === 6){
@@ -44,13 +46,13 @@
 //     console.log ("You are a senior. Your bill is $10.")
 // }
 
-// let getColor = phrase;
+// let phrase = "go";
 
 //   if (phrase === 'stop') {
 //     console.log ("red");
 // } else if (phrase === 'slow') {
 //     console.log ("yellow");
-// } else if (phrase ==== 'go') {
+// } else if (phrase === 'go') {
 //     console.log ("green");
 // } else {
 //     console.log ("purple");
@@ -70,7 +72,7 @@
 
 // PRACTICE
 
-// const num = 79; // THIS IS THE ONLY LINE YOU SHOULD CHANGE :)
+// const num = 65; // THIS IS THE ONLY LINE YOU SHOULD CHANGE :)
 
 // if (num <= 100) {
 //   if (num >= 50) {
@@ -83,6 +85,8 @@
 //     }
 //   }
 // }
+
+
 
 // --TRUTHY AND FALSY VALUES--
 
@@ -1209,29 +1213,83 @@
 //   // console.log(firstName);
 // }
 
-const dayOfTheWeek = 4;
+// Switch Statement----
 
-switch (dayOfTheWeek) {
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    case 4:
-        console.log("Thursday");
-        break;
-    case 5:
-        console.log("Friday");
-        break;
-    case 6:
-        console.log("Saturday");
-        break;
-    case 7:
-        console.log("Sunday");
-        break;
-        default: console.log("Sorry, I don't know that");
-}
+// const dayOfTheWeek = 4;
+
+// switch (dayOfTheWeek) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     case 7:
+//         console.log("Sunday");
+//         break;
+//         default: console.log("Sorry, I don't know that");
+// }
+
+
+// Revisiting Arrays---
+
+
+const colors = [
+  "rad",
+  "bleu",
+  "griin",
+  "yellow",
+  "purple",
+  "orange",
+  "pink",
+  "brown",
+  "cyan",
+  "magenta",
+  "teal",
+  "lime",
+  "indigo",
+  "maroon",
+  "navy",
+  "olive",
+  "orchid",
+  "peru",
+  "plum",
+  "salmon",
+];
+
+    colors[0] = "red";
+    colors[1] = "blue";
+    colors[2] = "green";
+    // Updating an array---
+    colors[20]= "color20";
+    colors[21] = "color21";
+
+    colors.push("color22");
+    colors.pop();
+    colors.shift();
+    colors.unshift("red");
+    colors.reverse();
+    colors.reverse();
+    colors.splice(15, 0, "Onomatopia-Onomatopia-Onomatopia-Onomatopia");
+
+    let newColors = colors;
+
+
+
+    console.log(newColors);
+
+    // for(let i = 0; i < colors.length; i++){
+    //     console.log(i, colors[i]);
+    // }
