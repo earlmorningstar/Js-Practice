@@ -1411,10 +1411,44 @@
 //    console.log("Valid Code");
 //  }
  
+
+// let maximum = parseInt(prompt("Enter a Maximum number"));
+//         while(!maximum) {
+//             maximum = parseInt(prompt("Enter a Valid number"));
+//         }
  
+
+    // Ternary Operator---
+
+// const isAuthenticated = false;
+// const userStatus = isAuthenticated ? "Logged In" : "Logged Out";
+// console.log(userStatus);
  
+// const age = 25;
+// const message = age >= 18 ? "Adult" : "Minor";
+// console.log(message);
+
+// For OF Loop---
+
+let fullNames =  ["Steph", "Drey", "Curry"];
+
+for(let full of fullNames) {
+    console.log(full);
+}
+
+
+// Iterating Over Object using 'For in loop'---
+
+const testScores = {
+        Keenan: 29,
+        Damon: 67,
+        Kim: 89,
+        Earl: 92
+      };
  
- 
+      for(let person in testScores){
+        console.log(`${person} scored ${testScores[person]}`);
+      }
  
 
      
