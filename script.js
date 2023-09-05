@@ -1245,51 +1245,134 @@
 
 // Revisiting Arrays---
 
+// const colors = [
+//   "rad",
+//   "bleu",
+//   "griin",
+//   "yellow",
+//   "purple",
+//   "orange",
+//   "pink",
+//   "brown",
+//   "cyan",
+//   "magenta",
+//   "teal",
+//   "lime",
+//   "indigo",
+//   "maroon",
+//   "navy",
+//   "olive",
+//   "orchid",
+//   "peru",
+//   "plum",
+//   "salmon",
+// ];
 
-const colors = [
-  "rad",
-  "bleu",
-  "griin",
-  "yellow",
-  "purple",
-  "orange",
-  "pink",
-  "brown",
-  "cyan",
-  "magenta",
-  "teal",
-  "lime",
-  "indigo",
-  "maroon",
-  "navy",
-  "olive",
-  "orchid",
-  "peru",
-  "plum",
-  "salmon",
-];
+//     colors[0] = "red";
+//     colors[1] = "blue";
+//     colors[2] = "green";
+//     // Updating an array---
+//     colors[20]= "color20";
+//     colors[21] = "color21";
 
-    colors[0] = "red";
-    colors[1] = "blue";
-    colors[2] = "green";
-    // Updating an array---
-    colors[20]= "color20";
-    colors[21] = "color21";
+//     colors.push("color22");
+//     colors.pop();
+//     colors.shift();
+//     colors.unshift("red");
+//     colors.reverse();
+//     colors.reverse();
+//     colors.splice(15, 0, "onomatopoeia-onomatopoeia-onomatopoeia-onomatopoeia");
 
-    colors.push("color22");
-    colors.pop();
-    colors.shift();
-    colors.unshift("red");
-    colors.reverse();
-    colors.reverse();
-    colors.splice(15, 0, "Onomatopia-Onomatopia-Onomatopia-Onomatopia");
-
-    let newColors = colors;
-
+//     let newColors = colors;
 
 
-    console.log(newColors);
+
+//     console.log(newColors);
 
     // for(let i = 0; i < colors.length; i++){
     //     console.log(i, colors[i]);
     // }
+
+    // console.log(colors[9]);
+
+    // Revisiting Objects---
+
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 30,
+        email: "john.doe@example.com"
+      };
+
+      const car = {
+        make: "Toyota",
+        model: "Camry",
+        year: 2022,
+        color: "Silver"
+      };
+
+      const book = {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        genre: "Fiction",
+        yearPublished: 1925
+      };
+
+      const animal = {
+        species: "Tiger",
+        habitat: "Jungle",
+        averageLifespan: 15,
+        diet: "Carnivore"
+      };
+
+      console.log(person.lastName);
+      console.log(book['genre']);
+
+
+    //   Nesting Array and Objects---
+
+
+      const classroom = {
+        className: "Math 101",
+        students: [
+          { name: "Alice", age: 18 },
+          { name: "Bob", age: 19 },
+          { name: "Charlie", age: 17 }
+        ],
+        teacher: {
+          firstName: "Mr.",
+          lastName: "Smith"
+        }
+      };
+    
+      const charlieAge = classroom.students[2].name;
+      console.log(charlieAge);
+
+
+    //   (Infinite Loop - Changing the i-=100 to i+=100)
+// for(i = 4100; i >= 0; i-= 100) {
+//     console.log(i);
+// }
+  //   (Infinite Loop - Changing the i-=100 to i+=100)
+
+  const arrayOfNamesArrays = [
+    ["Tobe", "Evenlny", "Dre"],
+    ["apple", "banana", "cherry"],
+    ["Steph", "Drey", "Curry"]
+  ];
+  
+  for(let i = 0; i < arrayOfNamesArrays.length; i++) {
+    const row = arrayOfNamesArrays[i];
+    console.log(`Row # ${i + 1}`);
+    for(let j = 0; j < row.length; j++){
+        console.log(row[j]);
+    }
+  }
+
+  let count = 0;
+
+  while(count < 40) {
+    count ++;
+    console.log(count);
+  }
+     
