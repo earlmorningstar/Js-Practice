@@ -1454,6 +1454,9 @@
 //       console.log(newLine);
  
 
+// Using Function---
+
+
 // function scores(firstName) {
 //   const testScores = {
 //             Keenan: 29,
@@ -1475,25 +1478,38 @@
 
 // console.log(sum(56, 22));
 
-function callTwice(func){
-  func();
-  func();
+// function callTwice(func){
+//   func();
+//   func();
+// }
+
+
+// function rolldie() {
+//   const roll = Math.floor(Math.random() * 15) + 1;
+//   console.log(roll);
+// }
+
+// callTwice (rolldie);
+
+// function callTenTimes(f) {
+//   for(let i = 0; i < 10; i++){
+//     f();
+//   }
+// }
+
+// callTenTimes(rolldie);
+
+// Function Expression---
+
+
+const addedNumber = function(num){
+  return num + num;
 }
 
+console.log(addedNumber(6));
 
-function rolldie() {
-  const roll = Math.floor(Math.random() * 15) + 1;
-  console.log(roll);
+const square = (num) => {
+  return num * num;
 }
 
-callTwice (rolldie);
-
-function callTenTimes(f) {
-  for(let i = 0; i < 10; i++){
-    f();
-  }
-}
-
-callTenTimes(rolldie);
-
-
+console.log(square(6)); 
