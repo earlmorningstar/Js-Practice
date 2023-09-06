@@ -1502,14 +1502,31 @@
 // Function Expression---
 
 
-const addedNumber = function(num){
-  return num + num;
-}
+// const addedNumber = function(num){
+//   return num + num;
+// }
 
-console.log(addedNumber(6));
+// console.log(addedNumber(6));
 
-const square = (num) => {
-  return num * num;
-}
+// const square = (num) => {
+//   return num * num;
+// }
 
-console.log(square(6)); 
+// console.log(square(6)); 
+
+// Using the keyword 'This'---
+
+
+// const earlDetails = {
+//   firstName: 'John',
+//   lastName: 'Stones',
+//   age: 18,
+//   address: '14 Campus street, Olympic Marselle, Egypt, cairo',
+//   email: 'onlyyouwakacome@gmail.com',
+//   eyeColor: 'grey',
+//   details(){
+//     console.log(`${this.firstName} ${this.lastName} says hello!!`);
+//   }
+// }
+
+// console.log(earlDetails.details());
