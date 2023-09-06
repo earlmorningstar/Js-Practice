@@ -1449,6 +1449,9 @@ const testScores = {
       for(let person in testScores){
         console.log(`${person} scored ${testScores[person]}`);
       }
+
+      const newLine = testScores.Keenan;
+      console.log(newLine);
  
 
      
