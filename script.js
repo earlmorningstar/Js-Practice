@@ -1454,24 +1454,46 @@
 //       console.log(newLine);
  
 
-function scores(firstName) {
-  const testScores = {
-            Keenan: 29,
-            Damon: 67,
-            Kim: 89,
-            Earl: 92
-          };
-  console.log(testScores);
+// function scores(firstName) {
+//   const testScores = {
+//             Keenan: 29,
+//             Damon: 67,
+//             Kim: 89,
+//             Earl: 92
+//           };
+//   console.log(testScores);
+// }
+
+// scores(`${'firstName'}`);
+
+// function sum(x, y) {
+//   if(typeof x !== 'number' || typeof y !== 'number') {
+//     return false;
+//   } 
+//   return (x + y);
+// }
+
+// console.log(sum(56, 22));
+
+function callTwice(func){
+  func();
+  func();
 }
 
-scores(`${'firstName'}`);
 
-function sum(x, y) {
-  if(typeof x !== 'number' || typeof y !== 'number') {
-    return false;
-  } 
-  return (x + y);
+function rolldie() {
+  const roll = Math.floor(Math.random() * 15) + 1;
+  console.log(roll);
 }
 
-console.log(sum(56, 22));
-     
+callTwice (rolldie);
+
+function callTenTimes(f) {
+  for(let i = 0; i < 10; i++){
+    f();
+  }
+}
+
+callTenTimes(rolldie);
+
+
