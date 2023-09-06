@@ -86,8 +86,6 @@
 //   }
 // }
 
-
-
 // --TRUTHY AND FALSY VALUES--
 
 // const userInput = prompt("Type Something");
@@ -1242,7 +1240,6 @@
 //         default: console.log("Sorry, I don't know that");
 // }
 
-
 // Revisiting Arrays---
 
 // const colors = [
@@ -1285,82 +1282,77 @@
 
 //     let newColors = colors;
 
-
-
 //     console.log(newColors);
 
-    // for(let i = 0; i < colors.length; i++){
-    //     console.log(i, colors[i]);
-    // }
+// for(let i = 0; i < colors.length; i++){
+//     console.log(i, colors[i]);
+// }
 
-    // console.log(colors[9]);
+// console.log(colors[9]);
 
-    // Revisiting Objects---
+// Revisiting Objects---
 
-    // const person = {
-    //     firstName: "John",
-    //     lastName: "Doe",
-    //     age: 30,
-    //     email: "john.doe@example.com"
-    //   };
+// const person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 30,
+//     email: "john.doe@example.com"
+//   };
 
-    //   const car = {
-    //     make: "Toyota",
-    //     model: "Camry",
-    //     year: 2022,
-    //     color: "Silver"
-    //   };
+//   const car = {
+//     make: "Toyota",
+//     model: "Camry",
+//     year: 2022,
+//     color: "Silver"
+//   };
 
-    //   const book = {
-    //     title: "The Great Gatsby",
-    //     author: "F. Scott Fitzgerald",
-    //     genre: "Fiction",
-    //     yearPublished: 1925
-    //   };
+//   const book = {
+//     title: "The Great Gatsby",
+//     author: "F. Scott Fitzgerald",
+//     genre: "Fiction",
+//     yearPublished: 1925
+//   };
 
-    //   const animal = {
-    //     species: "Tiger",
-    //     habitat: "Jungle",
-    //     averageLifespan: 15,
-    //     diet: "Carnivore"
-    //   };
+//   const animal = {
+//     species: "Tiger",
+//     habitat: "Jungle",
+//     averageLifespan: 15,
+//     diet: "Carnivore"
+//   };
 
-    //   console.log(person.lastName);
-    //   console.log(book['genre']);
+//   console.log(person.lastName);
+//   console.log(book['genre']);
 
+//   Nesting Array and Objects---
 
-    //   Nesting Array and Objects---
+//   const classroom = {
+//     className: "Math 101",
+//     students: [
+//       { name: "Alice", age: 18 },
+//       { name: "Bob", age: 19 },
+//       { name: "Charlie", age: 17 }
+//     ],
+//     teacher: {
+//       firstName: "Mr.",
+//       lastName: "Smith"
+//     }
+//   };
 
+//   const charlieAge = classroom.students[2].name;
+//   console.log(charlieAge);
 
-    //   const classroom = {
-    //     className: "Math 101",
-    //     students: [
-    //       { name: "Alice", age: 18 },
-    //       { name: "Bob", age: 19 },
-    //       { name: "Charlie", age: 17 }
-    //     ],
-    //     teacher: {
-    //       firstName: "Mr.",
-    //       lastName: "Smith"
-    //     }
-    //   };
-    
-    //   const charlieAge = classroom.students[2].name;
-    //   console.log(charlieAge);
-
-
-    //   (Infinite Loop - Changing the i-=100 to i+=100)
+//   (Infinite Loop - Changing the i-=100 to i+=100)
 // for(i = 4100; i >= 0; i-= 100) {
 //     console.log(i);
 // }
-  //   (Infinite Loop - Changing the i-=100 to i+=100)
+//   (Infinite Loop - Changing the i-=100 to i+=100)
 
 //   const arrayOfNamesArrays = [
 //     ["Tobe", "Evenlny", "Dre"],
 //     ["apple", "banana", "cherry"],
 //     ["Steph", "Drey", "Curry"]
 //   ];
-  
+
 //   for(let i = 0; i < arrayOfNamesArrays.length; i++) {
 //     const row = arrayOfNamesArrays[i];
 //     console.log(`Row # ${i + 1}`);
@@ -1369,9 +1361,7 @@
 //     }
 //   }
 
-
-        // While Loop----
-
+// While Loop----
 
 //   let count = 0;
 
@@ -1379,7 +1369,6 @@
 //     count ++;
 //     console.log(count);
 //   }
-
 
 // const code = "Babyfish";
 
@@ -1390,7 +1379,7 @@
 //         console.log("Please, enter the correct code");
 //          break;
 //     }
-//  } 
+//  }
 //  if(guess === code){
 //      console.log("Valid Code");
 //  }
@@ -1398,7 +1387,7 @@
 //  const code = "Babyfish";
 
 //  let guess = prompt("Enter your code");
- 
+
 //  while (guess !== code) {
 //    if (guess === null) {
 //      console.log("Code entry canceled.");
@@ -1406,24 +1395,22 @@
 //    }
 //    guess = prompt("Please, enter your code");
 //  }
- 
+
 //  if (guess === code) {
 //    console.log("Valid Code");
 //  }
- 
 
 // let maximum = parseInt(prompt("Enter a Maximum number"));
 //         while(!maximum) {
 //             maximum = parseInt(prompt("Enter a Valid number"));
 //         }
- 
 
-    // Ternary Operator---
+// Ternary Operator---
 
 // const isAuthenticated = false;
 // const userStatus = isAuthenticated ? "Logged In" : "Logged Out";
 // console.log(userStatus);
- 
+
 // const age = 25;
 // const message = age >= 18 ? "Adult" : "Minor";
 // console.log(message);
@@ -1436,7 +1423,6 @@
 //     console.log(full);
 // }
 
-
 // Iterating Over Object using 'For in loop'---
 
 // const testScores = {
@@ -1445,17 +1431,15 @@
 //         Kim: 89,
 //         Earl: 92
 //       };
- 
+
 //       for(let person in testScores){
 //         console.log(`${person} scored ${testScores[person]}`);
 //       }
 
 //       const newLine = testScores.Keenan;
 //       console.log(newLine);
- 
 
 // Using Function---
-
 
 // function scores(firstName) {
 //   const testScores = {
@@ -1472,7 +1456,7 @@
 // function sum(x, y) {
 //   if(typeof x !== 'number' || typeof y !== 'number') {
 //     return false;
-//   } 
+//   }
 //   return (x + y);
 // }
 
@@ -1482,7 +1466,6 @@
 //   func();
 //   func();
 // }
-
 
 // function rolldie() {
 //   const roll = Math.floor(Math.random() * 15) + 1;
@@ -1501,7 +1484,6 @@
 
 // Function Expression---
 
-
 // const addedNumber = function(num){
 //   return num + num;
 // }
@@ -1512,10 +1494,9 @@
 //   return num * num;
 // }
 
-// console.log(square(6)); 
+// console.log(square(6));
 
 // Using the keyword 'This'---
-
 
 // const earlDetails = {
 //   firstName: 'John',
@@ -1531,22 +1512,50 @@
 
 // console.log(earlDetails.details());
 
+// const colors = [
+//     "red",
+//     "blue",
+//     "green",
+//     "yellow",
+//     "purple",
+//     "orange",
+//     "pink",
+//     "brown",
+//     "cyan",
+//     "magenta",
+// ]
 
-const colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow",
-    "purple",
-    "orange",
-    "pink",
-    "brown",
-    "cyan",
-    "magenta",
-]
+// function print(element){
+//   console.log(element);
+// }
 
-function print(element){
-  console.log(element);
-}
+// colors.forEach(print);
 
-colors.forEach(print);
+const names = document.getElementById("name");
+const password = document.getElementById("password");
+const form = document.getElementById("form");
+const errorElement = document.getElementById("error");
+
+form.addEventListener("submit", (e) => {
+  let messages = [];
+  if (names.value === "" || names.value == null) {
+    messages.push("Name cannot be blank");
+  }
+
+  if (password.value.length <= 6) {
+    messages.push("Password must be longer than 6 characters");
+  }
+
+  if (password.value.length >= 20) {
+    messages.push("Password  must be less than 20 characters");
+  }
+
+  if (password.value === "password") {
+    messages.push("Password cannot be password");
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(",");
+  }
+});
