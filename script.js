@@ -1430,28 +1430,48 @@
 
 // For OF Loop---
 
-let fullNames =  ["Steph", "Drey", "Curry"];
+// let fullNames =  ["Steph", "Drey", "Curry"];
 
-for(let full of fullNames) {
-    console.log(full);
-}
+// for(let full of fullNames) {
+//     console.log(full);
+// }
 
 
 // Iterating Over Object using 'For in loop'---
 
-const testScores = {
-        Keenan: 29,
-        Damon: 67,
-        Kim: 89,
-        Earl: 92
-      };
+// const testScores = {
+//         Keenan: 29,
+//         Damon: 67,
+//         Kim: 89,
+//         Earl: 92
+//       };
  
-      for(let person in testScores){
-        console.log(`${person} scored ${testScores[person]}`);
-      }
+//       for(let person in testScores){
+//         console.log(`${person} scored ${testScores[person]}`);
+//       }
 
-      const newLine = testScores.Keenan;
-      console.log(newLine);
+//       const newLine = testScores.Keenan;
+//       console.log(newLine);
  
 
+function scores(firstName) {
+  const testScores = {
+            Keenan: 29,
+            Damon: 67,
+            Kim: 89,
+            Earl: 92
+          };
+  console.log(testScores);
+}
+
+scores(`${'firstName'}`);
+
+function sum(x, y) {
+  if(typeof x !== 'number' || typeof y !== 'number') {
+    return false;
+  } 
+  return (x + y);
+}
+
+console.log(sum(56, 22));
      
