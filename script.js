@@ -1530,3 +1530,23 @@
 // }
 
 // console.log(earlDetails.details());
+
+
+const colors = [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "pink",
+    "brown",
+    "cyan",
+    "magenta",
+]
+
+function print(element){
+  console.log(element);
+}
+
+colors.forEach(print);
