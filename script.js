@@ -1538,6 +1538,8 @@ const errorElement = document.getElementById("error");
 
 form.addEventListener("submit", (e) => {
   let messages = [];
+
+  // console.log(messages, "tttt");
   if (names.value === "" || names.value == null) {
     messages.push("Name cannot be blank");
   }
@@ -1559,3 +1561,69 @@ form.addEventListener("submit", (e) => {
     errorElement.innerText = messages.join(",");
   }
 });
+
+// const firstName = document.getElementById("firstname");
+// const lastName = document.getElementById("lastname");
+// const email = document.getElementById("email");
+// const password = document.getElementById("password");
+// const confirmPassword = document.getElementById("confirm-password");
+// const tel = document.getElementById("tel");
+// const form = document.getElementById("form");
+// const errorMsg = document.getElementById("errorMsg");
+
+// form.addEventListener("submit", (e) => {
+//   let messages = [];
+
+//   if (firstName.value === "" || firstName.value == null) {
+//     messages.push("Please input a first name");
+//   }
+
+// //   if (firstName.indexOf("") === -1) {
+// //     messages.push("Firstname field cannot contain space");
+// //   }
+
+//   if (lastName.value === "" || lastName.value == null) {
+//     messages.push("Please input a last name");
+//   }
+
+//   if (email.value === "" || email.value == null) {
+//     messages.push("Please input your email address");
+//   }
+
+//   if (password.value === "" || password.value == null) {
+//     messages.push("Please input your password");
+//   }
+
+//   if (password.value.length <= 4) {
+//     messages.push("Password cannot be less than 4 characters");
+//   }
+
+//   if (password.value.length >= 20) {
+//     messages.push("Password cannot be more than 20 characters");
+//   }
+
+//   if (password.value === "password") {
+//     messages.push("Password cannot be password");
+//   }
+
+//   if (confirmPassword.value !== password.value) {
+//     messages.push("Password does not match");
+//   }
+
+//   if (confirmPassword.value === "" || confirmPassword.value == null) {
+//     messages.push("Confirm your password");
+//   }
+
+//   if (tel.value === "" || tel.value == null) {
+//     messages.push("Input your phone number");
+//   }
+
+//   if (isNaN(tel.value)) {
+//     messages.push("Number field can only accepts numerals");
+//   }
+
+//   if (messages.length > 0) {
+//     e.preventDefault();
+//     errorMsg.innerText = messages.join(", ");
+//   }
+// });
