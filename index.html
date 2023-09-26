@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
 
     <title>First JS Script</title>
   </head>
@@ -22,9 +26,9 @@
     </ul>
   </div> -->
 
-  <!-- Score Keeper Game -->
+    <!-- Score Keeper Game -->
 
-  <!-- <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
+    <!-- <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
   <select name="" id="playTo">
     <option value="4">4</option>
     <option value="5">5</option>
@@ -38,10 +42,9 @@
   <button id="p2Button">+1 Player Two</button>
   <button id="reset">Reset</button> -->
 
-   <!-- Score Keeper Game -->
+    <!-- Score Keeper Game -->
 
-
-   <!-- ---Tv Show Search--- -->
+    <!-- ---Tv Show Search--- -->
 
     <!-- <form id="searchForm">
       <input type="text" placeholder="Search Tv Shows" name="query">
@@ -50,7 +53,7 @@
 
     <!-- ---Tv Show Search--- -->
 
-      <div id="error"></div>
+    <!-- <div id="error"></div>
     <form id="form" action="/" method="GET">
       <div>
         <label for="name" >Name</label>
@@ -59,7 +62,33 @@
         <input id="password" name="password" type="password">
       </div>
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
+
+    <main>
+      <section class="container">
+        <div class="title">
+          <h2>Our Reviews</h2>
+          <div class="underline"></div>
+        </div>
+        <article class="review">
+          <div class="img-container">
+            <img id="customer-img" src="/images/Frame 72.png" alt="" />
+          </div>
+          <h4 id="author">Name: Nobody Cares</h4>
+          <p id="job">Work and Pay</p>
+          <p id="info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nam
+            fuga nihil eveniet numquam obcaecati officia. Consectetur nisi optio
+            numquam?
+          </p>
+          <div class="button-container">
+            <button id="prevBtn" class="prev btn"><i class="bx bx-skip-previous"></i></button>
+            <button id="nextBtn" class="next btn"><i class="bx bx-skip-next"></i></button>
+          </div>
+          <button id="randomBtn" class="random-btn btn">Suprise</button>
+        </article>
+      </section>
+    </main>
 
     <!-- Axios Link--- -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
