@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  padding-top: 40px;
+  padding-top: 20px;
 }
-main {
+
+/* Carousel Slide Practice Starts Here---- */
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,4 +70,6 @@ main {
   border-radius: 7px;
   text-align: center;
   cursor: pointer;
-}
+} */
+
+/* Carousel Slide Practice Ends Here---- */

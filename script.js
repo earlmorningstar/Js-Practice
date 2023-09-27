@@ -1625,107 +1625,123 @@
 
 //Carousel Slide Practice Starts Here----
 
-const reviews = [
-  {
-    id: 1,
-    name: "John Doe",
-    job: "Web Developer",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fportrait-hesitant-man-purses-lips-looks-bewilderment-feels-doubt_273609-16785.jpg&tbnid=eH4qafLuLpiPYM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygEegQIARBW..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Frandom-person&docid=anAi59N_Ek2IpM&w=626&h=417&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygEegQIARBW",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur urna nec enim consequat, eu suscipit est feugiat. Maecenas viverra non leo ac hendrerit. Fusce ut leo nec ex vehicula vulputate.",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    job: "Graphic Designer",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1525134479668-1bee5c7c6845%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=TFRIh9iEa4C21M&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygDegQIARBU..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1499&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygDegQIARBU",
-    text: "Suspendisse in libero non ipsum hendrerit aliquam. Praesent fringilla dolor ac odio vulputate, id volutpat dolor dapibus. Vestibulum id efficitur justo, eget bibendum neque.",
-  },
-  {
-    id: 3,
-    name: "David Johnson",
-    job: "Software Engineer",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1539571696357-5a69c17a67c6%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=-oY7miZTUt20kM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygCegQIARBS..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1500&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygCegQIARBS",
-    text: "Cras vel bibendum quam. Nulla facilisi. Donec vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero.",
-  },
-  {
-    id: 4,
-    name: "Mec manny",
-    job: "Insta Editor",
-    image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1438761681033-6461ffad8d80%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=BWbn9tI650PW6M&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=667&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygBegQIARBQ",
-    text: "Vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
-  },
-  {
-    id: 5,
-    name: "Elneny Job",
-    job: "Farmer and Engineer",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1499996860823-5214fcc65f8f%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%253D%253D%26w%3D1000%26q%3D80&tbnid=l5xiTX_WDwWEAM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygHegQIARBd..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1245&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygHegQIARBd",
-    text: "Donec vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
-  },
-  {
-    id: 6,
-    name: "Ismailer Monna",
-    job: "Fountain of life",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506794778202-cad84cf45f1d%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=9sbMvuKuTNGVBM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygRegQIARBy..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1500&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygRegQIARBy",
-    text: "Justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
-  },
-  {
-    id: 7,
-    name: "Earl Morningstar",
-    job: "Front-End Engineer",
-    image:
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.boredpanda.com%2Fblog%2Fwp-content%2Fuploads%2F2017%2F04%2F2ndSaint-58f797b9ac1a7__880.jpg&tbnid=JSPtbWOdd1DdgM&vet=10CC8QMyh4ahcKEwjg47rZ98eBAxUAAAAAHQAAAAAQAw..i&imgrefurl=https%3A%2F%2Fwww.boredpanda.com%2Five-photographed-random-people-from-random-places%2F&docid=rj1myoy1CaNM4M&w=880&h=1320&q=hd%20random%20people%20images&ved=0CC8QMyh4ahcKEwjg47rZ98eBAxUAAAAAHQAAAAAQAw",
-    text: "Eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
-  },
-];
+// const reviews = [
+//   {
+//     id: 1,
+//     name: "John Doe",
+//     job: "Web Developer",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fportrait-hesitant-man-purses-lips-looks-bewilderment-feels-doubt_273609-16785.jpg&tbnid=eH4qafLuLpiPYM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygEegQIARBW..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Frandom-person&docid=anAi59N_Ek2IpM&w=626&h=417&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygEegQIARBW",
+//     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur urna nec enim consequat, eu suscipit est feugiat. Maecenas viverra non leo ac hendrerit. Fusce ut leo nec ex vehicula vulputate.",
+//   },
+//   {
+//     id: 2,
+//     name: "Jane Smith",
+//     job: "Graphic Designer",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1525134479668-1bee5c7c6845%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=TFRIh9iEa4C21M&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygDegQIARBU..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1499&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygDegQIARBU",
+//     text: "Suspendisse in libero non ipsum hendrerit aliquam. Praesent fringilla dolor ac odio vulputate, id volutpat dolor dapibus. Vestibulum id efficitur justo, eget bibendum neque.",
+//   },
+//   {
+//     id: 3,
+//     name: "David Johnson",
+//     job: "Software Engineer",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1539571696357-5a69c17a67c6%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=-oY7miZTUt20kM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygCegQIARBS..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1500&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygCegQIARBS",
+//     text: "Cras vel bibendum quam. Nulla facilisi. Donec vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero.",
+//   },
+//   {
+//     id: 4,
+//     name: "Mec manny",
+//     job: "Insta Editor",
+//     image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1438761681033-6461ffad8d80%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=BWbn9tI650PW6M&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=667&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygBegQIARBQ",
+//     text: "Vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
+//   },
+//   {
+//     id: 5,
+//     name: "Elneny Job",
+//     job: "Farmer and Engineer",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1499996860823-5214fcc65f8f%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%253D%253D%26w%3D1000%26q%3D80&tbnid=l5xiTX_WDwWEAM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygHegQIARBd..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1245&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygHegQIARBd",
+//     text: "Donec vel justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
+//   },
+//   {
+//     id: 6,
+//     name: "Ismailer Monna",
+//     job: "Fountain of life",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1506794778202-cad84cf45f1d%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww%26w%3D1000%26q%3D80&tbnid=9sbMvuKuTNGVBM&vet=12ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygRegQIARBy..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom-people&docid=6Q5jdwScsUw-qM&w=1000&h=1500&q=hd%20random%20people%20images&ved=2ahUKEwjB74rX98eBAxV1nCcCHdnuBfAQMygRegQIARBy",
+//     text: "Justo vel eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
+//   },
+//   {
+//     id: 7,
+//     name: "Earl Morningstar",
+//     job: "Front-End Engineer",
+//     image:
+//       "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.boredpanda.com%2Fblog%2Fwp-content%2Fuploads%2F2017%2F04%2F2ndSaint-58f797b9ac1a7__880.jpg&tbnid=JSPtbWOdd1DdgM&vet=10CC8QMyh4ahcKEwjg47rZ98eBAxUAAAAAHQAAAAAQAw..i&imgrefurl=https%3A%2F%2Fwww.boredpanda.com%2Five-photographed-random-people-from-random-places%2F&docid=rj1myoy1CaNM4M&w=880&h=1320&q=hd%20random%20people%20images&ved=0CC8QMyh4ahcKEwjg47rZ98eBAxUAAAAAHQAAAAAQAw",
+//     text: "Eros luctus lacinia. Proin eget tincidunt odio, nec pellentesque nisl. Nunc nec lacus ac libero. Cras vel bibendum quam. Nulla facilisi.",
+//   },
+// ];
 
-const img = document.getElementById("customer-img");
-const author = document.getElementById("author");
-const job = document.getElementById("job");
-const info = document.getElementById("info");
+// const img = document.getElementById("customer-img");
+// const author = document.getElementById("author");
+// const job = document.getElementById("job");
+// const info = document.getElementById("info");
 
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const randomBtn = document.getElementById("randomBtn");
+// const prevBtn = document.getElementById("prevBtn");
+// const nextBtn = document.getElementById("nextBtn");
+// const randomBtn = document.getElementById("randomBtn");
 
-let currentItem = 0;
+// let currentItem = 0;
 
-window.addEventListener("DOMContentLoaded", () => {
-  showPerson();
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   showPerson();
+// });
 
-function showPerson(){
-  const item = reviews[currentItem];
-  img.src = item.img;
-  author.textContent = item.name;
-  job.textContent = item.job;
-  info.textContent = item.text;
-}
+// function showPerson(){
+//   const item = reviews[currentItem];
+//   img.src = item.img;
+//   author.textContent = item.name;
+//   job.textContent = item.job;
+//   info.textContent = item.text;
+// }
 
-nextBtn.addEventListener('click', ()=> {
-  currentItem++;
-  if(currentItem > reviews.length -1){
-    currentItem = 0;
-  }
-  showPerson();
-})
+// nextBtn.addEventListener('click', ()=> {
+//   currentItem++;
+//   if(currentItem > reviews.length -1){
+//     currentItem = 0;
+//   }
+//   showPerson();
+// })
 
 
-prevBtn.addEventListener('click', ()=> {
-  currentItem--;
-  if(currentItem < 0){
-    currentItem = reviews.length - 1;
-  }
-  showPerson();
-})
+// prevBtn.addEventListener('click', ()=> {
+//   currentItem--;
+//   if(currentItem < 0){
+//     currentItem = reviews.length - 1;
+//   }
+//   showPerson();
+// })
 
-randomBtn.addEventListener('click', ()=> {
-  currentItem = Math.floor(Math.random() * reviews.length);
-  showPerson();
-});
+// randomBtn.addEventListener('click', ()=> {
+//   currentItem = Math.floor(Math.random() * reviews.length);
+//   showPerson();
+// });
 
 //Carousel Slide Practice Ends Here----
+
+
+
+//-----------------------------------REACT PRACTICES BEGINS HERE-----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------REACT PRACTICES ENDS HERE-----------------------------------
